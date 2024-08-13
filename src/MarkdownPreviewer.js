@@ -38,7 +38,7 @@ Code block
         />
         <div
           id="preview"
-          dangerouslySetInnerHTML={{ __html: marked.parse(editorValue)}}
+          dangerouslySetInnerHTML={{ __html: marked.parse(editorValue) }}
         />
       </div>
     </div>
