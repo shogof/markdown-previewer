@@ -10,7 +10,6 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   max-width: 1200px;
   margin: 40px auto;
   border-radius: 20px;
@@ -21,8 +20,7 @@ body {
   animation: fadeIn 0.5s ease;
 }
 
-.header,
-footer {
+.header {
   background: linear-gradient(to bottom, #ff69b4 50%, #ffb6c1 100%);
   color: #fff;
   padding: 30px;
@@ -106,10 +104,11 @@ footer {
 
   #editor,
   #preview {
-    width: 100%;
+    width: 90%;
     height: 50vh;
     padding: 20px;
     font-size: 16px;
+    margin: 20px 0;
   }
 }
 
