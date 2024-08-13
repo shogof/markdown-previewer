@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { marked } from "marked";
-import "./MarkdownPreviewer.css"; // Import the updated CSS file
+import React, { useState, useEffect } from 'react';
+import { marked } from 'marked';
+import './MarkdownPreviewer.css'; // Import the updated CSS file
 
 const MarkdownPreviewer = () => {
   const [editorValue, setEditorValue] = useState(`# Heading
@@ -38,7 +38,7 @@ Code block
         />
         <div
           id="preview"
-          dangerouslySetInnerHTML={{ __html: marked.parse(editorValue) }}
+          dangerouslySetInnerHTML={{ __html: marked.parse(editorValue)}}
         />
       </div>
     </div>

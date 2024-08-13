@@ -65,7 +65,6 @@ body {
   background-image: linear-gradient(to bottom, #f7f7f7, #fff);
   background-size: 100% 3px;
   background-position: 0% 100%;
-  transition: background-position 0.3s ease;
 }
 
 #editor:focus {
@@ -127,6 +126,7 @@ body {
   0% {
     transform: translateY(-100%);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -136,9 +136,11 @@ body {
   0% {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
+
   50% {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
+
   100% {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
