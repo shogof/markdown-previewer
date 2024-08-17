@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { marked } from 'marked';
-import './MarkdownPreviewer.css'; // Import the updated CSS file
+import './MarkdownPreviewer.css'
 
 const MarkdownPreviewer = () => {
   const [editorValue, setEditorValue] = useState(`# Heading
@@ -14,12 +14,6 @@ Code block
 > Blockquote
 ![Image](https://www.freecodecamp.org/favicon.ico)
 **Bolded text**`);
-
-  useEffect(() => {
-    marked.setOptions({
-      breaks: true,
-    });
-  }, []);
 
   const handleEditorChange = (e) => {
     setEditorValue(e.target.value);
@@ -38,7 +32,9 @@ Code block
         />
         <div
           id="preview"
-          dangerouslySetInnerHTML={{ __html: marked.parse(editorValue) }}
+          dangerouslySetInnerHTML={{
+            __html: marked.parse(editorValue, { breaks: true }),
+          }}
         />
       </div>
     </div>
