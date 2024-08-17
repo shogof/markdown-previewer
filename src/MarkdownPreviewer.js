@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { marked } from 'marked';
-import './MarkdownPreviewer.css'
+import './MarkdownPreviewer.css';
 
 const MarkdownPreviewer = () => {
   const [editorValue, setEditorValue] = useState(`# Heading
@@ -31,8 +31,7 @@ Code block
           onChange={handleEditorChange}
         />
         <div
-          id="preview"
-          dangerouslySetInnerHTML={{
+          id="preview" dangerouslySetInnerHTML={{
             __html: marked.parse(editorValue, { breaks: true }),
           }}
         />
