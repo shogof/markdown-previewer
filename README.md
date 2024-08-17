@@ -10,7 +10,7 @@ This React-based application allows users to write and preview Markdown in real-
 
 ## Demo 📸
 
-![Markdown Previewer Screenshot](public/images/im.png)
+![Markdown Previewer Screenshot](./public/Images/im.png)
 
 ## Technologies Used 🛠️
 
