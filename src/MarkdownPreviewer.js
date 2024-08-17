@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { marked } from 'marked';
+import ReactMarkdown from 'react-markdown';
 import './MarkdownPreviewer.css';
 
 const MarkdownPreviewer = () => {
@@ -30,11 +30,9 @@ Code block
           value={editorValue}
           onChange={handleEditorChange}
         />
-        <div
-          id="preview" dangerouslySetInnerHTML={{
-            __html: marked.parse(editorValue, { breaks: true }),
-          }}
-        />
+        <div id="preview">
+          <ReactMarkdown>{editorValue}</ReactMarkdown>
+        </div>
       </div>
     </div>
   );
