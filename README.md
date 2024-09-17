@@ -63,7 +63,7 @@ To set up the project locally, follow these steps:
 
 - **State Management:**
 
-  - `editorValue`: Stores the current Markdown input from the user.
+  - `editorValue`: Stores the current Markdown input from user.
 
 - **handleEditorChange Function:**
   Updates the `editorValue` state with the content from the textarea.
